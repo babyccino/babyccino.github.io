@@ -751,11 +751,11 @@ var ApiService = /** @class */ (function () {
     function ApiService(http) {
         this.http = http;
         this.headers = new _angular_http__WEBPACK_IMPORTED_MODULE_1__["Headers"]();
-        this.api_url = '101.177.84.34:3000/api';
+        this.api_url = 'http://101.177.84.34:3000/api';
         this.headers.append('Content-type', 'application/json');
     }
     ApiService.prototype.get = function (path) {
-        console.log("GET " + path);
+        console.log("GET " + this.api_url + path);
         return this.http.get("" + this.api_url + path)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res.json(); })).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["catchError"])(function (err) { throw err; }));
     };
