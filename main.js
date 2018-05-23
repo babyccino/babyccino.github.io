@@ -248,7 +248,7 @@ module.exports = "<form [formGroup]=\"signUpForm\"\n\t(ngSubmit)=\"onFormSubmit(
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "label {\n  margin-bottom: 0; }\n\n.my-form {\n  font-size: 15px; }\n\n.body-block input {\n  height: 50px; }\n"
+module.exports = "label {\n  margin-bottom: 0; }\n\n.my-form {\n  font-size: 15px; }\n"
 
 /***/ }),
 
