@@ -751,7 +751,7 @@ var ApiService = /** @class */ (function () {
     function ApiService(http) {
         this.http = http;
         this.headers = new _angular_http__WEBPACK_IMPORTED_MODULE_1__["Headers"]();
-        this.api_url = '/api';
+        this.api_url = '101.177.84.34:3000/api';
         this.headers.append('Content-type', 'application/json');
     }
     ApiService.prototype.get = function (path) {
